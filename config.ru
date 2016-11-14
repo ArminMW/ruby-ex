@@ -14,7 +14,9 @@ end
 
 map '/host' do
   host = proc do |env|
-    [200, { "Content-Type" => "text/html" }, ["host"]]
+    [200, { "Content-Type" => "text/html" }, [
+      >> Socket.gethostname
+      ]]
   end
   run host
 end
