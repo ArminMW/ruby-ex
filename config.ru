@@ -14,7 +14,7 @@ map '/lobster' do
   run Rack::Lobster.new
 end
 
-map '/host' do
+map '/container' do
   host = proc do |env|
     [200, { "Content-Type" => "text/html" }, [hostname]]
   end
