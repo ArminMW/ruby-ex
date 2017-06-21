@@ -16,7 +16,7 @@ end
 
 map '/container' do
   host = proc do |env|
-    [200, { "Content-Type" => "text/html" }, [hostname]]
+    [200, { "Content-Type" => "text/html" }, [hostname] , "Armin"]
   end
   run host
 end
