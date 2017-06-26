@@ -10,7 +10,7 @@ map '/health' do
   run health
 end
 
-map '/lubster' do
+map '/lobster' do
   run Rack::Lobster.new
 end
 
