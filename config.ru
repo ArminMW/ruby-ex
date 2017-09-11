@@ -1,4 +1,4 @@
-require 'rock/lobster'
+require 'rack/lobster'
 require 'socket'
 
 hostname = Socket.gethostname
